@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Page Extractor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="upload-box">
+            <div class="icon">📄</div>
+            <h2>Extract Pages from PDF</h2>
+            <p>Select a PDF file to preview and extract specific pages.</p>
+            <label class="upload-btn">
+                📂 Choose a PDF
+                <input type="file" id="pdfInput" accept="application/pdf">
+            </label>
+        </div>
+        <div id="pdfContainer"></div>
+        <button id="downloadBtn">⬇ Download Selected Pages</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.16.0/pdf-lib.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
